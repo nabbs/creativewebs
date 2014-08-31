@@ -287,7 +287,13 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding:20px 0;
+    padding:10px 0;
+		position:fixed;
+		bottom:0;
+		left:0;
+		float:left;
+		width:100%;
+		background:#1269a7;
 }
 
 footer p {
@@ -424,7 +430,10 @@ body {
     }
 }
 
-@media (max-width: 480px){
+@media (max-width:480px){
+	h1 {
+		font-size:36px!important;
+	}
 	.col-lg-10 {
 		margin-left:83px;
 	}
@@ -432,5 +441,9 @@ body {
 		-webkit-transform: scale(0.6);
      transform: scale(0.6);
 		 margin: 0;
+	}
+	
+  footer p {
+		font-size:12px;
 	}
 }
