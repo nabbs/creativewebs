@@ -294,6 +294,8 @@ footer {
 		float:left;
 		width:100%;
 		background:#1269a7;
+		text-transform:uppercase;
+		font-family:helvetica;
 }
 
 footer p {
@@ -376,6 +378,10 @@ body {
     .centerContent .centerContent-body .centerContent-body-text {
         font-size: 25px;
     }
+		
+		footer p {
+			font-size:16px;
+		}
 }
 
 @-webkit-keyframes pulse {    
