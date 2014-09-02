@@ -254,6 +254,23 @@ a.ico-vm:hover {background-position:-360px -1656px;}
     background: url(../img/backdrop6.jpg) no-repeat center center scroll;
 }
 
+.portfolio_icon a {
+		background: none;
+		border: 6px solid #1269a7;
+		border-radius: 40px;
+		float: left;
+		margin: 0 0 30px 30px;
+		overflow: hidden;
+		padding: 9px;
+		position: relative;
+		transition: all 0.2s ease-in;
+		-webkit-transition: all 0.1s ease-in;
+		-moz-transition: all 0.1s ease-in;
+		-o-transition: all 0.1s ease-in;
+		width: 200px;
+		height: 200px;
+}
+
 .services-section {
     background: url(../img/backdrop2.jpg) no-repeat center center scroll;
 }
