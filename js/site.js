@@ -154,7 +154,7 @@ function init() {
 }
 
 $(document).ready(function(){
-	$(".service-icon a").tooltip({
+	/*$(".service-icon a").tooltip({
 		placement : 'bottom'
-	});
+	});*/
 });
