@@ -4,7 +4,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: /*#f90*/#1269a7;
+    background-color: /*#f90*/#fff;
 }
 
 html {
@@ -32,13 +32,14 @@ p {
     line-height: 1.5;
 }
 
-img {width:100%}
+
 
 a {
     color: #219ab3;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+		outline: 0;
 }
 
 a:hover,
@@ -91,7 +92,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: #65a5d1;
 }
 
@@ -255,7 +256,7 @@ a.ico-vm:hover {background-position:-360px -1656px;}
 }
 
 .portfolio_icon a {
-		background: none;
+		background: #fff;
 		border: 6px solid #1269a7;
 		border-radius: 40px;
 		float: left;
@@ -269,7 +270,43 @@ a.ico-vm:hover {background-position:-360px -1656px;}
 		-o-transition: all 0.1s ease-in;
 		width: 200px;
 		height: 200px;
+		outline: 0;
 }
+
+.portfolio_icon a:hover {
+		opacity:0.7;
+}
+
+
+.portfolio_icon a.rimmel {
+		background:#fff url(../img/portfolio/rimmel/logo-cover_s.jpg) no-repeat center center scroll;
+}
+
+
+.portfolio_icon a.boss {
+		background:#fff url(../img/portfolio/bossnoir/cover_s.jpg) no-repeat center center scroll;
+}
+
+.portfolio_icon a.db {
+		background:#fff url(../img/portfolio/davidbeckham/cover_s.jpg) no-repeat center center scroll;
+}
+
+.portfolio_icon a.revlon {
+		background:#fff url(../img/portfolio/revlon/cover_s.jpg) no-repeat center center scroll;
+}
+
+.portfolio_icon a.loreal {
+		background:#fff url(../img/portfolio/loreal/cover_s.jpg) no-repeat center center scroll;
+}
+
+.portfolio_icon a.panasonic {
+		background:#000 url(../img/portfolio/panasonic/cover_s.jpg) no-repeat center center scroll;
+}
+
+.portfolio_icon a.garnier {
+		background:#fff url(../img/portfolio/garnier/cover_s.jpg) no-repeat center center scroll;
+}
+
 
 .services-section {
     background: url(../img/backdrop2.jpg) no-repeat center center scroll;
@@ -401,6 +438,29 @@ body {
 		footer p {
 			font-size:16px;
 		}
+		
+		.portfolio-section .modal-dialog {
+			width:800px;
+			height:auto;
+		}
+		
+		.modal {
+			overflow:hidden;
+		}
+		
+		.modal-body {
+			height:700px;
+			overflow:auto;
+		}
+		
+		.modal-body img {
+			border:10px solid #65a5d1;
+			margin-bottom:10px;
+		}
+		
+		.modal-footer {
+			text-align:left;
+		}
 }
 
 @-webkit-keyframes pulse {    
@@ -456,15 +516,15 @@ body {
 }
 
 @media (max-width:480px){
+	img {width:100%}
+	
 	h1 {
 		font-size:36px!important;
 	}
-	.col-lg-10 {
+	.col-lg-8 {
 		margin-left:83px;
 	}
 	.service-icon {
-		-webkit-transform: scale(0.6);
-     transform: scale(0.6);
 		 margin: 0;
 	}
 	

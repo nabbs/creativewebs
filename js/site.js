@@ -157,4 +157,11 @@ $(document).ready(function(){
 	/*$(".service-icon a").tooltip({
 		placement : 'bottom'
 	});*/
+	
+	
+	$('.portfolio_icon a').click(function(q){
+    q.preventDefault();
+    targetSlide = parseInt($(this).attr('data-to'));
+    $('#myCarousel').carousel(targetSlide);	
+});
 });
