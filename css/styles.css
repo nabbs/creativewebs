@@ -391,6 +391,34 @@ body {
 	top:60px;
 }
 
+.carousel-indicators li {
+	background-color:#f90;
+}
+
+.carousel-indicators li.active {
+	background-color:#000;
+}
+
+.carousel .item {
+	-webkit-transition: opacity 0.1s ease-in-out;
+	-moz-transition: opacity 0.1s ease-in-out;
+	-ms-transition: opacity 0.1s ease-in-out;
+	-o-transition: opacity 0.1s ease-in-out;
+	transition: opacity 0.1s ease-in-out;
+}
+.carousel .active.left, .carousel .active.right {
+	left:0;
+	opacity:0;
+	z-index:2;
+}
+.carousel .next, .carousel .prev {
+	left:0;
+	opacity:1;
+	z-index:1;
+}
+.carousel-control.right, .carousel-control.left  {
+	background:none;
+}	
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;

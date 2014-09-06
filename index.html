@@ -69,54 +69,60 @@
       <h2>Portfolio</h2>
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="rimmel" title="Rimmel London" data-toggle="modal" data-target="#myModal" data-to="0"></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="panasonic" title="Panasonic" data-toggle="modal" data-target="#myModal" data-to="2"></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="boss" title="Boss Noir" data-toggle="modal" data-target="#boss"></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="db" title="David Beckham" data-toggle="modal" data-target="#db"></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="revlon" title="Revlon" data-toggle="modal" data-target="#revlon"></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="loreal" title="L'Oreal" data-toggle="modal" data-target="#loreal"></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="garnier" title="Garnier" data-toggle="modal" data-target="#garnier"></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a> </div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a> </div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="rimmel" title="Rimmel London" data-toggle="modal" data-target="#myModal" data-to="0"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="panasonic" title="Panasonic" data-toggle="modal" data-target="#myModal" data-to="1"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="boss" title="Boss Noir" data-toggle="modal" data-target="#myModal" data-to="2"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="db" title="David Beckham" data-toggle="modal" data-target="#myModal" data-to="3"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="revlon" title="Revlon" data-toggle="modal" data-target="#myModal" data-to="4"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="loreal" title="L'Oreal"data-toggle="modal" data-target="#myModal" data-to="5"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="garnier" title="Garnier" data-toggle="modal" data-target="#myModal" data-to="6"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="" title=""></a></div>
         </div>
-        <div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Rimmel London</h4>
+                <h4 class="modal-title" id="myModalLabel"></h4>
               </div>
               <div class="modal-body"> 
                 <!--<br><br><br><img src="img/portfolio/rimmel/rimmel-4.jpg"> -->
-                <div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel"> 
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> 
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
                   </ol>
-                  
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
-                    <div class="item active"> <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide"> <img src="img/portfolio/rimmel/rimmel-1.jpg"> 
-                      <!--<div class="carousel-caption">
-                      <h3>First slide label</h3>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>--> 
+                    <div class="item active" title="Rimmel London new"> <img src="img/portfolio/rimmel/rimmel-1.jpg"> <span>Rimmel London</span>
+                      <div>
+                        <h3>Rimmel London</h3>
+                        <p>HTML, CSS and jQuery</p>
+                      </div>
                     </div>
-                    <div class="item"> <img data-src="holder.js/750x400/auto/#666:#444/text:Second slide" alt="Second slide"> <img src="img/portfolio/rimmel/rimmel-2.jpg"> 
+                    <div class="item" title="Panasonic"> <img src="img/portfolio/rimmel/rimmel-2.jpg"> 
                       <!--<div class="carousel-caption">
                       <h3>Second slide label</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>--> 
                     </div>
-                    <div class="item"> <img data-src="holder.js/600x300/auto/#555:#333/text:Third slide" alt="Third slide"> <img src="img/portfolio/rimmel/rimmel-3.jpg"> 
+                    <div class="item" title="Boss Noir"> <img src="img/portfolio/rimmel/rimmel-3.jpg"> 
                       <!--<div class="carousel-caption">
                       <h3>Third slide label</h3>
                       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>--> 
+                    </div>
+                    <div class="item" title="David Beckham"> <img src="img/portfolio/rimmel/rimmel-2.jpg"> 
+                      <!--<div class="carousel-caption">
+                      <h3>Second slide label</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>--> 
                     </div>
                   </div>
@@ -125,7 +131,7 @@
                   <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
               </div>
               <div class="modal-footer">
-                <h4 class="modal-title">3 Different campaigns. I coded the 3 projects using html, css and jquery. </h4>
+                <h4 class="modal-title"><!--3 Different campaigns. I coded the 3 projects using html, css and jquery.--> </h4>
               </div>
             </div>
           </div>
