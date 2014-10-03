@@ -109,7 +109,8 @@ a:focus {
     background-color: #65a5d1;
 }
 
-
+header h1, header p {display:none;}
+section {display:none;}
 .centerContent {
     display: table;
     width: 100%;
@@ -470,7 +471,7 @@ body {
 		}
 		
 		.portfolio-section .modal-dialog {
-			width:800px;
+			width:750px;
 			height:auto;
 		}
 		

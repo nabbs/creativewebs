@@ -7,6 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="CreativeWebs">
 <title>CreativeWebs Onine Media</title>
+<link rel="icon" type="image/png" href="img/icon.png">
 <link href="css/core.min.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
 <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -69,9 +70,9 @@
       <h2>Portfolio</h2>
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="rimmel" title="Rimmel London" data-toggle="modal" data-target="#myModal" data-to="0"></a></div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="panasonic" title="Panasonic" data-toggle="modal" data-target="#myModal" data-to="1"></a></div>
-          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#myCarousel" class="boss" title="Boss Noir" data-toggle="modal" data-target="#myModal" data-to="2"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="rimmel" title="Rimmel London" data-toggle="modal" data-target="#myModal" data-to="0"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="panasonic" title="Panasonic" data-toggle="modal" data-target="#myModal" data-to="1"></a></div>
+          <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="boss" title="Boss Noir" data-toggle="modal" data-target="#myModal" data-to="2"></a></div>
           <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="db" title="David Beckham" data-toggle="modal" data-target="#myModal" data-to="3"></a></div>
           <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="revlon" title="Revlon" data-toggle="modal" data-target="#myModal" data-to="4"></a></div>
           <div class="col-md-3 col-sm-6 portfolio_icon"><a href="#" class="loreal" title="L'Oreal"data-toggle="modal" data-target="#myModal" data-to="5"></a></div>
@@ -87,51 +88,56 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel"></h4>
+                <h3 class="modal-title" id="myModalLabel"></h3>
               </div>
               <div class="modal-body"> 
-                <!--<br><br><br><img src="img/portfolio/rimmel/rimmel-4.jpg"> -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> 
                   <!-- Indicators -->
-                  <ol class="carousel-indicators">
+                  <ol class="carousel-indicators hidden">
                     <li data-target="#myCarousel" data-slide-to="0"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
                   </ol>
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
-                    <div class="item active" title="Rimmel London"> <img src="img/portfolio/rimmel/rimmel-1.jpg"> <span>Rimmel London</span>
-                      <div>
+                    <div class="item active" title="Rimmel London"><img src="img/portfolio/rimmel/rimmel-1.jpg">
+                      <div class="hidden">
                         <h3>Rimmel London</h3>
-                        <p>HTML, CSS and jQuery</p>
+                        <p>Rimmel London Coded in HTML, CSS and jQuery</p>
                       </div>
                     </div>
-                    <div class="item" title="Panasonic"> <img src="img/portfolio/rimmel/rimmel-2.jpg"> 
-                      <!--<div class="carousel-caption">
-                      <h3>Second slide label</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>--> 
+                    <div class="item" title="Panasonic"><img src="img/portfolio/rimmel/rimmel-2.jpg">
+                      <div class="hidden">
+                        <h3>Panasonic</h3>
+                        <p>Panasonic HTML, CSS and jQuery</p>
+                      </div>
                     </div>
-                    <div class="item" title="Boss Noir"> <img src="img/portfolio/rimmel/rimmel-3.jpg"> 
-                      <!--<div class="carousel-caption">
-                      <h3>Third slide label</h3>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>--> 
+                    <div class="item" title="Boss Noir"><img src="img/portfolio/rimmel/rimmel-3.jpg">
+                      <div class="hidden">
+                        <h3>Boss Noir</h3>
+                        <p>Boss Noir HTML, CSS and jQuery</p>
+                      </div>
                     </div>
-                    <div class="item" title="David Beckham"> <img src="img/portfolio/rimmel/rimmel-2.jpg"> 
-                      <!--<div class="carousel-caption">
-                      <h3>Second slide label</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>--> 
+                    <div class="item" title="David Beckham"><img src="img/portfolio/rimmel/rimmel-2.jpg">
+                      <div class="hidden">
+                        <h3>David Beckham</h3>
+                        <p>David Beckham HTML, CSS and jQuery</p>
+                      </div>
                     </div>
+                    
                   </div>
-                  
                   <!-- Controls --> 
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                 </div>
               </div>
               <div class="modal-footer">
-                <h4 class="modal-title"><!--3 Different campaigns. I coded the 3 projects using html, css and jquery.--> </h4>
+                <h3>Heading</h3>
+                <p>Description</p>
               </div>
             </div>
           </div>
@@ -209,9 +215,9 @@
     <p>Copyright &copy; CreativeWebs Online Media 2014</p>
   </div>
 </footer>
-<script src="js/jquery-1.11.0.js"></script> 
-<script src="js/core.min.js"></script> 
-<script src="js/jquery.easing.min.js"></script> 
-<script src="js/site.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script> 
+<script type="text/javascript" src="js/core.min.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
