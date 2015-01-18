@@ -159,6 +159,9 @@ section {display:none;}
 		-moz-transition: none!important;
 		transition: none!important;
 		transform: scale(0.7);
+		-webkit-transform:scale(0.7);
+		-moz-transform:scale(0.7);
+		-o-transform:scale(0.7);
 		outline: 0;
 		width: 167px;
 		height: 167px;
@@ -256,58 +259,64 @@ a.ico-vm:hover {background-position:-360px -1656px;}
     background: url(../img/backdrop6.jpg) no-repeat center center scroll;
 }
 
-.portfolio_icon a {
-		background: #fff;
+.portfolio_icon {
+	  background: #fff;
 		border: 6px solid #1269a7;
 		border-radius: 40px;
-		float: left;
 		margin: 0 0 30px 30px;
-		overflow: hidden;
-		padding: 9px;
-		position: relative;
-		transition: all 0.2s ease-in;
-		-webkit-transition: all 0.1s ease-in;
-		-moz-transition: all 0.1s ease-in;
-		-o-transition: all 0.1s ease-in;
+		z-index:100;
 		width: 200px;
 		height: 200px;
+		position:relative;
+		overflow:hidden;
+}
+
+.portfolio_icon a {
+		transition: all 0.5s ease-out;
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		display:block;
 		outline: 0;
+		width:inherit;
+		height:inherit;
+		position:absolute;
+		left: -8px;
+		bottom: -5px;
 }
 
 .portfolio_icon a:hover {
-		opacity:0.7;
+		transition: All 0.5s ease-in;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition: all 0.5s ease-in;
+		-o-transition: all 0.5s ease-in;
+		transform: scale(1.5) rotate(10deg) skew(1deg) translate(20px);
+		-webkit-transform: scale(1.5) rotate(10deg) skew(1deg) translate(20px);
+		-moz-transform: scale(1.5) rotate(10deg) skew(1deg) translate(20px);
+		-o-transform: scale(1.5) rotate(10deg) skew(1deg) translate(20px);
 }
-
 
 .portfolio_icon a.rimmel {
 		background:#fff url(../img/portfolio/rimmel/logo-cover_s.jpg) no-repeat center center scroll;
 }
-
-
 .portfolio_icon a.boss {
 		background:#fff url(../img/portfolio/bossnoir/cover_s.jpg) no-repeat center center scroll;
 }
-
 .portfolio_icon a.db {
 		background:#fff url(../img/portfolio/davidbeckham/cover_s.jpg) no-repeat center center scroll;
 }
-
 .portfolio_icon a.revlon {
 		background:#fff url(../img/portfolio/revlon/cover_s.jpg) no-repeat center center scroll;
 }
-
 .portfolio_icon a.loreal {
 		background:#fff url(../img/portfolio/loreal/cover_s.jpg) no-repeat center center scroll;
 }
-
 .portfolio_icon a.panasonic {
 		background:#000 url(../img/portfolio/panasonic/cover_s.jpg) no-repeat center center scroll;
 }
-
 .portfolio_icon a.garnier {
 		background:#fff url(../img/portfolio/garnier/cover_s.jpg) no-repeat center center scroll;
 }
-
 
 .services-section {
     background: url(../img/backdrop2.jpg) no-repeat center center scroll;

@@ -90,7 +90,7 @@
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <h3 class="modal-title" id="myModalLabel"></h3>
               </div>
-              <div class="modal-body"> 
+              <div class="modal-body">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> 
                   <!-- Indicators -->
                   <ol class="carousel-indicators hidden">
@@ -128,12 +128,21 @@
                         <p>David Beckham HTML, CSS and jQuery</p>
                       </div>
                     </div>
-                    
+                    <div class="item" title="Revlon"><img src="img/portfolio/rimmel/rimmel-3.jpg">
+                      <div class="hidden">
+                        <h3>Revlon</h3>
+                        <p>Revlon HTML, CSS and jQuery</p>
+                      </div>
+                    </div>
+                    <div class="item" title="L'Oreal"><img src="img/portfolio/rimmel/rimmel-3.jpg">
+                      <div class="hidden">
+                        <h3>L'Oreal</h3>
+                        <p>L'Oreal HTML, CSS and jQuery</p>
+                      </div>
+                    </div>
                   </div>
                   <!-- Controls --> 
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-                 </div>
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a> </div>
               </div>
               <div class="modal-footer">
                 <h3>Heading</h3>
@@ -165,12 +174,12 @@
       <h2>Services</h2>
       <div class="row">
         <div class="col-lg-8 col-md-offset-2">
-          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-wd" data-toggle="modal" title="Website Design" data-target="#serviceContent">Website Design</a> </div>
-          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-wo" data-toggle="modal" data-target="#serviceContent" title="Website Optimisation">Website Optimisation</a> </div>
-          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-anly" data-toggle="modal" data-target="#serviceContent" title="Analytics">Analytics</a> </div>
-          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-lp" data-toggle="modal" data-target="#serviceContent" title="Landing Pages">Landing Pages</a> </div>
-          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-ta" data-toggle="modal" data-target="#serviceContent" title="Target Audience">Target Audience</a> </div>
-          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-vm" data-toggle="modal" data-target="#serviceContent" title="Video Marketing">Video Marketing</a> </div>
+          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-wd active" data-toggle="modal" data-target="#serviceContent"  title="Website Design" id="ico-wd">Website Design</a> </div>
+          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-wo" data-toggle="modal" data-target="#serviceContent" title="Website Optimisation" id="ico-wo">Website Optimisation</a> </div>
+          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-anly" data-toggle="modal" data-target="#serviceContent" title="Analytics" id="ico-anly">Analytics</a> </div>
+          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-lp" data-toggle="modal" data-target="#serviceContent" title="Landing Pages" id="ico-lp">Landing Pages</a> </div>
+          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-ta" data-toggle="modal" data-target="#serviceContent" title="Target Audience" id="ico-ta">Target Audience</a> </div>
+          <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-vm" data-toggle="modal" data-target="#serviceContent" title="Video Marketing" id="ico-vm">Video Marketing</a> </div>
           <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-ta" data-toggle="modal" data-target="#serviceContent" title="Target Audience">Target Audience</a> </div>
           <div class="col-md-3 col-sm-6 service-icon"> <a href="#" class="ico-vm" data-toggle="modal" data-target="#serviceContent" title="Video Marketing">Video Marketing</a> </div>
         </div>
@@ -180,9 +189,18 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Website Design</h4>
+                <h4 class="modal-title" id="myModalLabel"></h4>
               </div>
-              <div class="modal-body">Website Design</div>
+              <div class="modal-body">
+                <div id="ico-wd-txt" class="hide"> 
+                <p>Website Design</p>                                
+                </div>
+                <div id="ico-wo-txt" class="hide">Website Optimisation</div>
+                <div id="ico-anly-txt" class="hide">Analytics</div>
+                <div id="ico-lp-txt" class="hide">Landing Pages</div>
+                <div id="ico-ta-txt" class="hide">Target Audience</div>
+                <div id="ico-vm-txt" class="hide">Video Marketing</div>
+              </div>
             </div>
           </div>
         </div>
@@ -212,12 +230,12 @@
 <!-- Footer -->
 <footer>
   <div class="text-center">
-    <p>Copyright &copy; CreativeWebs Online Media 2014</p>
+    <p>Copyright &copy; CreativeWebs Online Media 2015</p>
   </div>
 </footer>
 <script type="text/javascript" src="js/jquery-1.11.0.js"></script> 
 <script type="text/javascript" src="js/core.min.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>

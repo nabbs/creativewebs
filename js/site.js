@@ -53,6 +53,7 @@ $(document).ready(function(){
 		$('#myModalLabel').text($(this).attr('title'));
 		var itemContent = $('.carousel-inner div.active div').html();
 		$('.modal-footer').html(itemContent);
+		console.log(targetSlide);
 	});
 	
 	$('#myCarousel').on('slid.bs.carousel', function () {
@@ -66,6 +67,29 @@ $(document).ready(function(){
 	$('header p').delay(800).slideDown(300,'linear');	
 });
 
+//load services content
+$('#services .service-icon a').click(function(){
+	$(this).addClass('active');
+	var modalText = $(this).attr('id');
+	$('.modal-body #' +modalText+'-txt').removeClass('hide');		
+})
+
+//show services text and content in the modal
+$('#serviceContent').on('show.bs.modal',function(){
+		var current = $('#services .service-icon a.active').attr('title');
+		$('#serviceContent .modal-title').text(current);
+	});
+	
+	$('#serviceContent').on('hidden.bs.modal',function(){
+		$('#services .service-icon a').removeClass('active');
+		$('#serviceContent .modal-body div').addClass('hide');
+	});
+
+var animFunc = function(id){
+	$(id).removeClass('hide');
+	$(id).slideDown('slow');
+	console.log('Invoked');
+}
 /*$('nav a').each(function() {
 	$(this).click(function() {
 		var current =  $(this).prop("hash");
