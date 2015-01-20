@@ -269,6 +269,7 @@ a.ico-vm:hover {background-position:-360px -1656px;}
 		height: 200px;
 		position:relative;
 		overflow:hidden;
+		
 }
 
 .portfolio_icon a {
@@ -294,6 +295,7 @@ a.ico-vm:hover {background-position:-360px -1656px;}
 		-webkit-transform: scale(1.5) rotate(10deg) skew(1deg) translate(20px);
 		-moz-transform: scale(1.5) rotate(10deg) skew(1deg) translate(20px);
 		-o-transform: scale(1.5) rotate(10deg) skew(1deg) translate(20px);
+		overflow:hidden;
 }
 
 .portfolio_icon a.rimmel {
@@ -431,6 +433,10 @@ body {
 .carousel-control.right, .carousel-control.left  {
 	background:none;
 }	
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+	color:#f90;
+}
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
